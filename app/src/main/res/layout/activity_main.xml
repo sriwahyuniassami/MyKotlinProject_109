@@ -7,6 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/cat" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,7 +26,9 @@
             android:layout_marginTop="10dp"
             android:text="Aplikasi Penghitung Nilai"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textColor="#115B92"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
@@ -29,7 +37,9 @@
             android:layout_marginTop="15dp"
             android:text="Selamat Datang di Aplikasi Penghitung Nilai"
             android:textAlignment="center"
-            android:textSize="14sp" />
+            android:textColor="#115B92"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_nim"
@@ -38,7 +48,8 @@
             android:layout_marginTop="25dp"
             android:ems="10"
             android:hint="NIM"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/et_nama_lengkap"
@@ -47,7 +58,8 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="Nama Lengkap"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/et_nilai"
@@ -56,21 +68,18 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="Nilai"
-            android:inputType="number|numberDecimal" />
+            android:inputType="number|numberDecimal"
+            android:textColor="#000000" />
 
         <Button
             android:id="@+id/btn_hitung"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="HITUNG" />
+            android:backgroundTint="#2196F3"
+            android:text="HITUNG"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Created by: Sri Wahyuni Assami (5170411109)"
-            android:textAlignment="center" />
     </LinearLayout>
 </RelativeLayout>
